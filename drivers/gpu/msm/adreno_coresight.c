@@ -5,7 +5,6 @@
 
 #include <linux/coresight.h>
 #include <linux/of.h>
-
 #include "adreno.h"
 
 #define TO_ADRENO_CORESIGHT_ATTR(_attr) \

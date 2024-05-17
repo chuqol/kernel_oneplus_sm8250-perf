@@ -3,7 +3,7 @@
  * Copyright (c) 2014-2015, 2017-2019, The Linux Foundation. All rights reserved.
  */
 
-#include <linux/coresight.h>
+#include <linux/coresight.h> 
 #include <linux/coresight-cti.h>
 #include <linux/workqueue.h>
 #include <linux/sched/clock.h>

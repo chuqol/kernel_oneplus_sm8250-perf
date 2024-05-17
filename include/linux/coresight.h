@@ -3,7 +3,8 @@
  * Copyright (c) 2012,2017-2018,2021, The Linux Foundation. All rights reserved.
  */
 
-#ifndef _LINUX_CORESIGHT_H
+/*
+#ifndef _LINUX_CORESIGHT_H */
 #define _LINUX_CORESIGHT_H
 
 #include <linux/device.h>
@@ -325,8 +326,10 @@ static inline void coresight_abort(void) {}
 static inline void coresight_disable_reg_clk(struct coresight_device *csdev) {}
 static inline int coresight_enable_reg_clk(struct coresight_device *csdev)
 { return -EINVAL; }
+/*
 void coresight_disable_all_source_link(void) {};
 void coresight_enable_all_source_link(void) {};
+
 inline int coresight_claim_device_unlocked(void __iomem *base)
 {
 	return -EINVAL;
@@ -345,6 +348,7 @@ inline bool coresight_loses_context_with_cpu(struct device *dev)
 	return false;
 }
 #endif
+*/
 
 #if defined(CONFIG_OF) && defined(CONFIG_CORESIGHT)
 extern int of_coresight_get_cpu(const struct device_node *node);
